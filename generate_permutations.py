@@ -5,7 +5,7 @@ def generate_permutations(N:int, M:int=-1, prefix=None):
     M = N if M == -1 else M # by default N numbers in N positions
     prefix = prefix or []
     if M == 0:
-        print(prefix)
+        print(*prefix)
         return
     for number in range(1, N+1):
         if number in prefix:
